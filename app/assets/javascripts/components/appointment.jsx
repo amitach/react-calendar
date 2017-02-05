@@ -6,7 +6,7 @@ var Appointment = React.createClass({
                  {this.props.appointment.title}
              </h3>
              <p>
-                 {this.props.appointment.appointment_time}
+                 {formatDate(this.props.appointment.appointment_time)}
              </p>
          </div>
      )

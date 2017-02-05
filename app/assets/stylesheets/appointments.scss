@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-  width:500px;
+  width:50%;
   margin: auto;
   font-family:Arial, Sans-Serif;
   font-size: 14px;
@@ -22,7 +22,14 @@ body{
 }
 .appointment{
   padding: 10px;
-  border-bottom: solid 1px #ccc;
+  border-bottom: solid 1px #428bca;
   border-left: solid 4px #eee;
+  border-left-color: #428bca;
   margin-top: 5px;
+  line-height: 1;
+}
+
+.input-title{
+  width:50%;
+  height: 35px;
 }

@@ -18,7 +18,10 @@ var Appointments = React.createClass({
     },
     addNewAppointment: function (data) {
         var appointments = React.addons.update(this.state.appointments, { $push: [data]});
-        this.setState({appointments: appointments});
+        this.setState({appointments: appointments.sort(function (a, b) {
+            return new Date(a.appointment_time) - new Date(b.appointment_time);
+        })
+        });
     },
     render: function () {
         return (
